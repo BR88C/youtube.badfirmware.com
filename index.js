@@ -5,13 +5,15 @@ const ytdl = require('ytdl-core');
 const ffmpeg = require('fluent-ffmpeg');
 const pjson = require('./package.json');
 const config = require('./config.json');
+
+// Configuring ejs and Express
 const app = express()
   , server = require('http').createServer(app)
-
-// Configuring ejs
- app.set('view engine', 'ejs');
-
-// Specify website directory
+app.set('view engine', 'ejs');
+app.set("views","./site");
+app.get('/', (req, res)=>{ 
+	res.render('index'); 
+});
 app.use(express.static(__dirname + '/site'));
 
 // Listen on specified port in config.json
