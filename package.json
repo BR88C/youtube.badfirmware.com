@@ -1,6 +1,6 @@
 {
   "name": "youtube.badfirmware.com",
-  "version": "0.3.0",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,11 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "BR88C",
-  "contributors": [
-    "Moorad",
-    "Chazie9"
-  ],
-  "license": "ISC",
+  "license": "GNU General Public License v3.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/BR88C/youtube.badfirmware.com"
