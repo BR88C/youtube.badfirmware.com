@@ -1,0 +1,113 @@
+/* Landscape Mode */
+@media screen and (orientation: landscape) {
+	* {
+		text-align: center;
+	}
+	
+	.heading {
+		font-family: "Arial", Gadget, sans-serif;
+		margin-top:30vh;
+		color: #EEEEEE;
+	}
+	
+	.URL-input, .convert-button {
+		font-size:1.3em;
+		padding:5px 10px;
+	}
+	
+	.URL-input {
+		border-radius:4px 0px 0px 4px;
+		width:30em;
+		text-align: left;
+		border:2px solid rgb(49, 49, 49);
+		background: rgb(49, 49, 49);
+		color: #EEEEEE;
+		outline: none;
+	}
+	
+	.URL-input:focus {
+		border:2px solid #f00000;
+	}
+	
+	.convert-button {
+		border:2px solid #f00000;
+		background: #f00000;
+		color:rgb(248, 228, 228);
+		transition: 0.15s;
+	}
+	
+	.convert-button:hover {
+		background: #c00202;
+		border-color: #c00202;
+	}
+	
+	.message {
+		font-family: Arial, Helvetica, sans-serif;
+		color: #EEEEEE;
+	}
+	
+	#mp3 {
+		border-radius:0px 4px 4px 0px;
+	}
+}
+
+
+/* Portrait Mode */
+@media screen and (orientation:portrait) {
+	* {
+		text-align: center;
+	}
+	
+	.heading {
+		font-family: "Arial", Gadget, sans-serif;
+		margin-top:3vm;
+		font-size: 1vm;
+		color: #EEEEEE;
+	}
+	
+	.URL-input {
+		font-size:4vm;
+		padding:5px 10px;
+	}
+
+	.convert-button {
+		font-size:0.7vm;
+		padding:5px 10px;
+	}
+	
+	.URL-input {
+		border-radius:4px 0px 0px 4px;
+		width:90%;
+		text-align: left;
+		border:2px solid rgb(49, 49, 49);
+		background: rgb(49, 49, 49);
+		color: #EEEEEE;
+		outline: none;
+	}
+	
+	.URL-input:focus {
+		border:2px solid #f00000;
+	}
+	
+	.convert-button {
+		border:2px solid #f00000;
+		background: #f00000;
+		color:rgb(248, 228, 228);
+		transition: 0.2s;
+	}
+	
+	.convert-button:hover {
+		background: #c00202;
+		border-color: #c00202;
+	}
+	
+	.message {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 0.5vm;
+		color: #EEEEEE;
+	}
+	
+	#mp3 {
+		border-radius:0px 4px 4px 0px;
+	}
+}
