@@ -1,10 +1,15 @@
+// Defining Modules
 const express = require('express');
+const ejs = require('ejs');
 const ytdl = require('ytdl-core');
 const ffmpeg = require('fluent-ffmpeg');
 const pjson = require('./package.json');
-const config = require('./config.json')
+const config = require('./config.json');
 const app = express()
   , server = require('http').createServer(app)
+
+// Configuring ejs
+ app.set('view engine', 'ejs');
 
 // Specify website directory
 app.use(express.static(__dirname + '/site'));
