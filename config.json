@@ -1,7 +1,5 @@
 {
     "port": "4000",
-
-    "_comment": "Below variables not implemented... yet",
-    "serverURL": "localhost:4000",
-    "defaultURL": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    "serverURL": "http://localhost:4000",
+    "exampleURL": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 }

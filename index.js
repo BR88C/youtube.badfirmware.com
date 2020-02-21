@@ -12,7 +12,8 @@ const app = express()
 app.set('view engine', 'ejs');
 app.set("views","./site");
 app.get('/', (req, res)=>{ 
-	res.render('index'); 
+	// Passes variables from config.json to index.ejs
+	res.render('index', { serverURL: config.serverURL }, { exampleURL: config.exampleURL }); 
 });
 app.use(express.static(__dirname + '/site'));
 
