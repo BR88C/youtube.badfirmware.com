@@ -6,13 +6,13 @@
     <title>youtube.badfirmware.com</title>
     <link rel="icon" 
       type="image/ico" 
-      href="http://youtube.badfirmware.com:4000/favicon.ico">
+      href=<%= config.serverURL + "/favicon.ico" %>>
       <meta name="viewport" content="width=device-width, initial-scale=1" /> 
 </head>
 
 <body style="background-color:rgb(38, 38, 38);">
     <h1 class="heading">badfirmware.com Youtube Video Downloader</h1>
-    <input class="URL-input" placeholder="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><button class="convert-button" id="mp4">Convert mp4</button><button class="convert-button" id='mp3'>Convert mp3</button>
+    <input class="URL-input" placeholder=<%= config.placeholderURL %>><button class="convert-button" id="mp4">Convert mp4</button><button class="convert-button" id='mp3'>Convert mp3</button>
     <script src='script.js'></script>
 
     <p class="message">Hosted on a Raspberry Pi 3 by BR88C</p>

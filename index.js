@@ -6,14 +6,18 @@ const ffmpeg = require('fluent-ffmpeg');
 const pjson = require('./package.json');
 const config = require('./config.json');
 
-// Configuring ejs and Express
+// Configuring app with express
 const app = express()
   , server = require('http').createServer(app)
+
+// Stes view engine and changes default views folder to site
 app.set('view engine', 'ejs');
 app.set("views","./site");
+
+// Sets up the site with ejs
 app.get('/', (req, res)=>{ 
 	// Passes variables from config.json to index.ejs
-	res.render('index'); 
+	res.render('index.ejs', { config: config }); 
 });
 app.use(express.static(__dirname + '/site'));
 
