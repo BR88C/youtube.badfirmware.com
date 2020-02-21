@@ -1,10 +1,8 @@
 var mp3Btn = document.getElementById('mp3');
 var	mp4Btn = document.getElementById('mp4');
 var URLinput = document.querySelector('.URL-input');
-
-var placeholderURL = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-
-var serverURL = 'http://youtube.badfirmware.com:4000';
+var placeholderURL = document.getElementById('placeholderURL').value;
+var serverURL = document.getElementById('serverURL').value;
 
 
 mp3Btn.addEventListener('click', () => {
@@ -17,7 +15,6 @@ mp3Btn.addEventListener('click', () => {
 	}
 });
 
-
 mp4Btn.addEventListener('click', () => {
 	if (typeof URLinput.value !== 'undefined' && URLinput.value) {
 		console.log(`URL: ${URLinput.value}`);	
@@ -27,6 +24,7 @@ mp4Btn.addEventListener('click', () => {
 		redirectMp4(placeholderURL)
 	}
 });
+
 
 function redirectMp3(query) {
 	window.location.href = `${serverURL}/downloadmp3?url=${query}`;
