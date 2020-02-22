@@ -1,5 +1,5 @@
 # youtube.badfirmware.com
-This is a youtube downloader website built in JavaScript and is hosted at [youtube.badfirmware.com:4000](http://youtube.badfirmware.com:4000/)
+This is a youtube downloader website built in JavaScript and is hosted at [youtube.badfirmware.com](http://youtube.badfirmware.com/)
 
 ## Prerequisites
 This program requires a couple of programs to work:
