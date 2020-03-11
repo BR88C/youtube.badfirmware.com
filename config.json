@@ -1,5 +1,6 @@
 {
     "port": "4000",
     "serverURL": "http://youtube.badfirmware.com",
-    "placeholderURL": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    "placeholderURL": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "message": "Hosted on a Raspberry Pi 3 by BR88C"
 }
