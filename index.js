@@ -3,8 +3,11 @@ const express = require('express');
 const ejs = require('ejs');
 const ytdl = require('ytdl-core');
 const ffmpeg = require('fluent-ffmpeg');
+const sanitize = require("sanitize-filename");
+const emojiStrip = require('emoji-strip')
 const pjson = require('./package.json');
 const config = require('./config.json');
+
 
 // Configuring app with express
 const app = express()
@@ -43,10 +46,14 @@ app.get('/downloadmp3', (req,res) => {
 			console.log('\x1b[37m', '')
 			return;
 		}
-		console.log('\x1b[33m', 'Converting to mp3: ' + info.title)
+		// Removes emojis and invalid charactors
+		var emojiTitle = sanitize(info.title)
+		var title = emojiStrip(emojiTitle)
+		// Logs the name of the Video
+		console.log('\x1b[33m', 'Converting to mp3: ' + title)
 		console.log('\x1b[37m', '');
 		// Sets header for the download
-		res.header("Content-Disposition", "attachment; filename=\"" + info.title + " queryID=" + queryid + ".mp3\"");
+		res.header("Content-Disposition", "attachment; filename=\"" + title + " queryID=" + queryid + ".mp3\"");
 	});
 	// Sets stream for ffmpeg
 	var stream = ytdl(url, {
@@ -82,10 +89,14 @@ app.get('/downloadmp4', (req,res) => {
 			console.log('\x1b[37m', '')
 			return;
 		}
-		console.log('\x1b[33m', 'Converting to mp4: ' + info.title)
+		// Removes emojis and invalid charactors
+		var emojiTitle = sanitize(info.title)
+		var title = emojiStrip(emojiTitle)
+		// Logs the name of the Video
+		console.log('\x1b[33m', 'Converting to mp4: ' + title)
 		console.log('\x1b[37m', '');
 		// Sets header for the download
-		res.header("Content-Disposition", "attachment; filename=\"" + info.title + " queryID=" + queryid + " .mp4\"");
+		res.header("Content-Disposition", "attachment; filename=\"" + title + " queryID=" + queryid + " .mp4\"");
 	});
 	// Downloads the video
 	ytdl(url, {
