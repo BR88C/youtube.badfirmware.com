@@ -48,7 +48,7 @@ app.get('/downloadmp3', (req,res) => {
 			return;
 		}
 		// Removes emojis and invalid charactors
-		var emojiTitle = sanitize(info.title)
+		var emojiTitle = sanitize(info.videoDetails.title)
 		var title = emojiStrip(emojiTitle)
 		// Logs the name of the Video
 		console.log('\x1b[33m', 'Converting to mp3: ' + title)
@@ -91,7 +91,7 @@ app.get('/downloadmp4', (req,res) => {
 			return;
 		}
 		// Removes emojis and invalid charactors
-		var emojiTitle = sanitize(info.title)
+		var emojiTitle = sanitize(info.videoDetails.title)
 		var title = emojiStrip(emojiTitle)
 		// Logs the name of the Video
 		console.log('\x1b[33m', 'Converting to mp4: ' + title)
