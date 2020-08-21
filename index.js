@@ -12,7 +12,7 @@ const config = require('./config.json');
 
 // Configuring app with express
 const app = express()
-  , server = require('https').createServer(app);
+  , server = require('http').createServer(app);
 
 // Stes view engine and changes default views folder to site
 app.set('view engine', 'ejs');
