@@ -1,6 +1,6 @@
 {
     "port": "4000",
-    "serverURL": "http://youtube.badfirmware.com",
+    "serverURL": "https://youtube.badfirmware.com",
     "placeholderURL": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "message": "Hosted by BR88C"
 }
