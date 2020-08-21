@@ -4,11 +4,11 @@ const https = require('https');
 const ejs = require('ejs');
 const ytdl = require('ytdl-core');
 const ffmpeg = require('fluent-ffmpeg');
+const fs = require('fs');
 const sanitize = require("sanitize-filename");
 const emojiStrip = require('emoji-strip');
 const pjson = require('./package.json');
 const config = require('./config.json');
-
 
 
 // Configuring app with express
