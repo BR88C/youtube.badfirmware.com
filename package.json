@@ -21,6 +21,7 @@
     "express": "^4.17.1",
     "ffmpeg": "0.0.4",
     "fluent-ffmpeg": "^2.1.2",
+    "https": "^1.0.0",
     "sanitize-filename": "^1.6.3",
     "ytdl-core": "^3.2.1"
   },

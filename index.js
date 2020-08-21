@@ -1,5 +1,6 @@
 // Defining Modules
 const express = require('express');
+const https = require('https');
 const ejs = require('ejs');
 const ytdl = require('ytdl-core');
 const ffmpeg = require('fluent-ffmpeg');
@@ -12,7 +13,6 @@ const config = require('./config.json');
 
 // Configuring app with express
 const app = express()
-  , server = require('http').createServer(app);
 
 // Stes view engine and changes default views folder to site
 app.set('view engine', 'ejs');
@@ -24,6 +24,11 @@ app.get('/', (req, res)=>{
 	res.render('index.ejs', { config: config }); 
 });
 app.use(express.static(__dirname + '/site'));
+
+const server = https.createServer({
+	key: fs.readFileSync(config.keyDir),
+	cert: fs.readFileSync(config.certDir),
+  }, app);
 
 // Listen on specified port in config.json
 server.listen(config.port, () => {
