@@ -1,5 +1,5 @@
 # youtube.badfirmware.com
-This is a youtube downloader website built in JavaScript and is hosted at [youtube.badfirmware.com](http://youtube.badfirmware.com/)
+This is a youtube downloader website built in JavaScript and is hosted at [youtube.badfirmware.com](https://youtube.badfirmware.com/)
 
 ## Prerequisites
 This program requires a couple of programs to work:
@@ -7,12 +7,16 @@ This program requires a couple of programs to work:
 - ffmpeg with libmp3lame
 
 ## Starting
+Before starting the program, make sure you have your node modules installed:
+```
+npm install
+```
 To start the program, run this command within the directory of index.js:
 ```
-node index.js
+npm start
 ```
 ## Hosting
-If you are hosting this on your own domain and server, change the port and serverURL in config.json accordingly and install Nginx for changing express.js's port to port 80
+If you are hosting this on your own server, change the port and serverURL in config.json accordingly. You can use nginx to reverse proxy the website to port 443 and point it to your domain. If you need an SSL certificate and key, you can use something like certbot to generate one.
 
 ## Troubleshooting
 If the program is having problems downloading videos, try updating ytdl:
