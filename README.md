@@ -3,7 +3,7 @@ This is a youtube downloader website built in JavaScript and is hosted at [youtu
 
 ## Prerequisites
 This program requires a couple of programs to work:
-- Node JS / npm
+- NodeJS and npm
 - ffmpeg with libmp3lame
 
 ## Starting
