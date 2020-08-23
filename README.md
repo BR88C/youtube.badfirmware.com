@@ -1,4 +1,4 @@
-# youtube.badfirmware.com
+# Youtube Downloader
 A youtube downloader website built in JavaScript.
 
 ## Prerequisites
