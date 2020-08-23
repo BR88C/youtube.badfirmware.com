@@ -2,7 +2,7 @@
     "port": "4000",
     "serverURL": "https://youtube.badfirmware.com",
     "placeholderURL": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "message": "Hosted by BR88C",
+    "message": "",
     "keyDir": "/etc/letsencrypt/live/youtube.badfirmware.com/privkey.pem",
     "certDir": "/etc/letsencrypt/live/youtube.badfirmware.com/fullchain.pem"
 }
