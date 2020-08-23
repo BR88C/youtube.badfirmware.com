@@ -1,5 +1,5 @@
 # youtube.badfirmware.com
-This is a youtube downloader website built in JavaScript and is hosted at [youtube.badfirmware.com](https://youtube.badfirmware.com/)
+A youtube downloader website built in JavaScript.
 
 ## Prerequisites
 This program requires a couple of programs to work:
